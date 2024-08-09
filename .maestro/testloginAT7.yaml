@@ -1,0 +1,12 @@
+appId: tech.jala.android.lite
+---
+- launchApp
+- tapOn: "Masuk"
+- tapOn: "Masuk dengan No HP atau Email"
+- tapOn: "No HP atau Email"
+- inputText: "jala.automation@gmail.com"
+- tapOn : "Kata Sandi"
+- inputText : "sandibaru"
+- tapOn : 
+  text: "Masuk"
+  index : 1
