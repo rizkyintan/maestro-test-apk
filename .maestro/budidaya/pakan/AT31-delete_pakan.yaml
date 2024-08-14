@@ -16,7 +16,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
-    waitToSettleTimeout: 5000 
+    waitToSettleTimeoutMs: 5000 
     
 - waitForAnimationToEnd:
     timeout: 5000
