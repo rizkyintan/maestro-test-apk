@@ -4,7 +4,7 @@ flows:
 excludeTags:
   - login
   - delete-pakan
-  - createread-pakam
+  - createread-pakan
   - crud-kematian
   - crud-anco
 
