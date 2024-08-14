@@ -1,6 +1,7 @@
 appId: tech.jala.android.lite
 name: AT26-27
-tags: ATPAKAN
+tags: 
+  - ATPAKAN
 ---
 - clearstate
 - launchApp
