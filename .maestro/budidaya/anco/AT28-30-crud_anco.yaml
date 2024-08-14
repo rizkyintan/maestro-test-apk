@@ -3,7 +3,7 @@ name: AT28-30
 tags: 
   - ATANCO
 ---
-- clearstate
+- clearState
 - launchApp
 
 - runFlow: login_email.yaml

@@ -3,7 +3,7 @@ name: AT41-43
 tags: 
   - ATKEM
 ---
-- clearstate
+- clearState
 - launchApp
 
 - runFlow: login_email.yaml

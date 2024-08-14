@@ -3,7 +3,7 @@ name: AT31
 tags: 
   - ATDELPAKAN
 ---
-- clearstate
+- clearState
 - launchApp
 
 - runFlow: login_email.yaml

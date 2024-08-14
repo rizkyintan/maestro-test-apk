@@ -3,7 +3,7 @@ name: AT23CRUD
 tags: 
   - ATAIR
 ---
-- clearstate
+- clearState
 - launchApp
 
 - runFlow: login_email.yaml
