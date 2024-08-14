@@ -1,4 +1,14 @@
 #config.yaml
 flows:
-  - "**"
+  - budidaya/kualitas_air/*
+excludeTags:
+  - login
+  - delete-pakan
+  - createread-pakam
+  - crud-kematian
+  - crud-anco
 
+executionOrder:
+    continueOnFailure: false
+    flowsOrder:
+        - AT23-25

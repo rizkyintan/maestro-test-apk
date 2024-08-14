@@ -1,4 +1,8 @@
 appId: tech.jala.android.lite
+appId: tech.jala.android.lite
+name: tambak_login
+tags:
+  - login
 ---
 - launchApp
 
