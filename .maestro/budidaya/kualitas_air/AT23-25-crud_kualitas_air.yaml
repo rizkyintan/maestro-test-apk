@@ -86,8 +86,7 @@ tags:
 - tapOn: 
     point: 555, 372 
 ## Assert data
-- assertVisible: 
-    visible: "pH"
+- assertVisible: "pH"
 
 - tapOn: 
     text: "-"
@@ -119,8 +118,7 @@ tags:
     visible: "Suhu"
     timeout: 10000 ##10 det##
 
-- assertVisible:
-    text: "Suhu"
+- assertVisible: "Suhu"
 
 ## klik edit ##
 - tapOn: 
@@ -133,8 +131,7 @@ tags:
     visible: "Belum ada data tersimpan"
     timeout: 10000 ##10 det##
 ## Assert data
-- assertVisible: 
-    text: "Belum ada data tersimpan"
+- assertVisible: "Belum ada data tersimpan"
   
 
 
