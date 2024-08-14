@@ -1,0 +1,51 @@
+appId: tech.jala.android.lite
+---
+- clearstate
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+
+- tapOn: 
+    point: 235, 681 ## pick kolam ##
+- tapOn: "A1" ## klik kolam A1##
+- tapOn: "Pakan" ## klik pakan ##
+- tapOn:
+    point: 311, 1155
+- tapOn: "Tidak"
+- tapOn:
+    point: 296, 992 ## klik jumlah pakan#
+- inputText: "5,5"
+- hideKeyboard
+- tapOn: 
+    point: 306, 967 ## klik opsional catatan##
+- inputText: "Test Automation"
+
+- tapOn: "Simpan"
+- extendedWaitUntil:
+    visible: "Jam"
+    timeout: 10000 ##10 det##
+
+## klik edit##
+- tapOn: 
+    point: 555, 343
+
+- tapOn: "Pilih Stok"
+- tapOn: "Pakan Bintang 584 (kg)"
+- tapOn: 
+    point: 296, 992
+- inputText: "2,5"
+- hideKeyboard
+- tapOn:
+    point: 306, 967
+- inputText: "Edit jumlah pakan"
+
+- tapOn: "Simpan"
+- extendedWaitUntil:
+    visible: "Jam"
+    timeout: 10000 ##10 det##
+
+
+
+

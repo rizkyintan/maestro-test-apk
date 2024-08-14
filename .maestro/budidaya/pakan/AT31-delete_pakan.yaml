@@ -1,0 +1,22 @@
+appId: tech.jala.android.lite
+---
+- clearstate
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+
+- tapOn: 
+    point: 235, 681 ## pick kolam ##
+- tapOn: "A1" ## klik kolam A1##
+- tapOn: "Pakan" ## klik pakan ##
+- tapOn: 
+    point: 555, 343
+- tapOn: "Hapus"
+- tapOn: "Ya, Saya Yakin"
+- extendedWaitUntil:
+    visible: "Belum ada data tersimpan"
+    timeout: 10000 ##10 det##
+- assertVisible: 
+    visible: "Belum ada data tersimpan"
