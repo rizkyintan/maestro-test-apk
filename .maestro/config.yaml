@@ -3,12 +3,12 @@ flows:
   - budidaya/kualitas_air/*
 excludeTags:
   - login
-  - delete-pakan
-  - createread-pakan
-  - crud-kematian
-  - crud-anco
+  - ATANCO
+  - ATDELPAKAN
+  - ATPAKAN
+  - ATKEM
 
 executionOrder:
     continueOnFailure: false
     flowsOrder:
-        - AT23-25
+        - AT23CRUD

@@ -1,6 +1,6 @@
 appId: tech.jala.android.lite
-name: AT23-25
-tags: crud-kualitas
+name: AT23CRUD
+tags: ATAIR
 ---
 - clearstate
 - launchApp
