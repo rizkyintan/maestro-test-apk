@@ -37,7 +37,7 @@ tags:
     text: "-"
     label: "tap ORP"
     index: 5 ## klik orp## ##clear##
-- inputText: "172,5"s
+- inputText: "172,5"
 - tapOn: 
     index: 4
     label: "input field kecerahan" ## klik kecerahan## 
