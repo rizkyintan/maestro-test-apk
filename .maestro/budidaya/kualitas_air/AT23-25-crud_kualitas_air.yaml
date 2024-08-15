@@ -92,7 +92,7 @@ tags:
     text: "Simpan" ## klik simpan##
     waitToSettleTimeoutMs: 7000
     delay: 10000
--stopApp
+- stopApp
 
 - clearState
 - launchApp
