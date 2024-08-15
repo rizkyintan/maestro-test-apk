@@ -18,10 +18,15 @@ tags:
     waitToSettleTimeoutMs: 5000
     delay: 5000
 
-
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
 - waitForAnimationToEnd:
     timeout: 5000
-- tapOn: "A1" ## klik kolam A1##
+- tapOn:
+    point: 62, 376
+    label: klik kolam  ## klik kolam A1##
 - tapOn:
     point: 311, 1155
 - tapOn: "Pilih warna air"
