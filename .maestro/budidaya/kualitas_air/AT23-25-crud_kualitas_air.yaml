@@ -92,9 +92,32 @@ tags:
     text: "Simpan" ## klik simpan##
     waitToSettleTimeoutMs: 7000
     delay: 10000
-- extendedWaitUntil:
-    visible: "A1"
-    timeout: 10000 ##10 detik##
+-stopApp
+
+- clearState
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+- tapOn: 
+    text: "Lite"
+    repeat: 3
+    delay: 5000
+- tapOn:
+    point: 235, 681 ## skip pick kolam ##
+    waitToSettleTimeoutMs: 5000
+    delay: 5000
+
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam  ## klik kolam A1##
 
 ## klik edit ##
 - tapOn: 
@@ -103,27 +126,23 @@ tags:
 - assertVisible: "pH"
 
 - tapOn: 
-    text: "-"
+    text: "26.5"
     label: "input field suhu"
-    index: 2 ## klik suhu##
 - eraseText
 - inputText: "27,5"
 - tapOn: 
-    text: "-"
+    text: "4.45"
     label: "input field DO"
-    index: 3 ## klik DO##
 - eraseText
 - inputText: "5,45"
 - tapOn: 
-    text: "-"
+    text: "7.5"
     label: "input field pH"
-    index: 0 ## klik pH##
 - eraseText
 - inputText: "8,5"
 - tapOn: 
-    text: "-"
+    text: "15.5"
     label: "input field salinitas"
-    index: 1 ## klik salinitas##
 - eraseText
 - inputText: "16,5"
 
