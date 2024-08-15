@@ -96,7 +96,6 @@ tags:
     visible: "A1"
     timeout: 10000 ##10 det##
 
-
 ## klik edit ##
 - tapOn: 
     point: 555, 372 
