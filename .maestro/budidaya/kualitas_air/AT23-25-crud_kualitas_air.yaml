@@ -150,12 +150,41 @@ tags:
 - eraseText
 - inputText: "16,5"
 
-- tapOn: "Simpan" ## klik simpan##
+- tapOn: 
+    text: "Simpan" ## klik simpan##
+    waitToSettleTimeoutMs: 7000
+    delay: 10000
 - extendedWaitUntil:
-    visible: "Suhu"
-    timeout: 10000 ##10 det##
+    notVisible: 
+        text: "Simpan" # or any other selector
+    timeout: 10000
+- stopApp
 
-- assertVisible: "Suhu"
+
+- clearState
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+- tapOn: 
+    text: "Lite"
+    repeat: 3
+    delay: 5000
+- tapOn:
+    point: 235, 681 ## skip pick kolam ##
+    waitToSettleTimeoutMs: 5000
+    delay: 5000
+
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam  ## klik kolam A1##
 
 ## klik edit ##
 - tapOn: 
@@ -167,8 +196,7 @@ tags:
 - extendedWaitUntil:
     visible: "Belum ada data tersimpan"
     timeout: 10000 ##10 det##
-## Assert data
-- assertVisible: "Belum ada data tersimpan"
+
   
 
 
