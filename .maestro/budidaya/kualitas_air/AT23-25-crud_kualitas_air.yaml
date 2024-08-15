@@ -65,7 +65,8 @@ tags:
 
 - hideKeyboard
 - scroll
-- tapOn: "Parameter lainnya"
+- tapOn: 
+    text: "Parameter lainnya"
     point: 138, 1015
 
 - scrollUntilVisible:
