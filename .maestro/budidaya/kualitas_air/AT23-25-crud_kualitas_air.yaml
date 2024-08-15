@@ -94,7 +94,7 @@ tags:
     delay: 10000
 - extendedWaitUntil:
     visible: "A1"
-    timeout: 10000 ##10 det##
+    timeout: 10000 ##10 detik##
 
 ## klik edit ##
 - tapOn: 
