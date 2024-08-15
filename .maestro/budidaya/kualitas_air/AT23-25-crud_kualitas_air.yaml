@@ -92,6 +92,10 @@ tags:
     text: "Simpan" ## klik simpan##
     waitToSettleTimeoutMs: 7000
     delay: 10000
+- extendedWaitUntil:
+    notVisible: 
+        text: "Simpan" # or any other selector
+    timeout: 10000
 - stopApp
 
 - clearState
