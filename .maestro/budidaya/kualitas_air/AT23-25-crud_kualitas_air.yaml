@@ -38,11 +38,7 @@ tags:
     label: "input field kecerahan"
     index: 4 ## klik kecerahan##
 - inputText: "72,5"
-- tapOn: 
-    text: "-"
-    label: "input field ORP"
-    index: 5 ## klik ORP##
-- inputText: "172,5"
+
 - tapOn: 
     text: "-"
     label: "input field suhu"
