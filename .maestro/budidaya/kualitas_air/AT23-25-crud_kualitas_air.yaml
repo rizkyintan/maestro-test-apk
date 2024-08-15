@@ -90,7 +90,7 @@ tags:
 
 - tapOn: "Simpan" ## klik simpan##
 - extendedWaitUntil:
-    visible: "Suhu"
+    visible: "A1"
     timeout: 10000 ##10 det##
 
 ## klik edit ##
