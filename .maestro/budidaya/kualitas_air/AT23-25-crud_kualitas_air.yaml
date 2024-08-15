@@ -38,17 +38,20 @@ tags:
     label: "input field kecerahan"
     index: 4 ## klik kecerahan##
 - inputText: "72,5"
-
+- tapOn: 
+    text: "-"
+    label: "input field ORP"
+    index: 3 ## klik orp##
+- inputText: "172,5"
 - tapOn: 
     text: "-"
     label: "input field suhu"
     index: 2 ## klik suhu##
 - inputText: "26,5"
 - tapOn: 
-    text: "-"
-    label: "input field DO"
-    index: 3 ## klik DO##
-- inputText: "4,45"
+    point: 441, 723
+    label: "input field Salinitas" ## klik salinitas##
+- inputText: "15,5"
 - tapOn: 
     text: "-"
     label: "input field pH"
@@ -56,28 +59,29 @@ tags:
 - inputText: "7,5"
 - tapOn: 
     text: "-"
-    label: "input field salinitas"
-    index: 1 ## klik salinitas##
+    label: "input field DO"
+    index: 1 ## klik do#
 - inputText: "15,5"
 
 - hideKeyboard
 - scroll
 - tapOn: "Parameter lainnya"
+    point: 138, 1015
 
 - scrollUntilVisible:
     element:
-      text: "Catatan"
+      text: "Ketinggian Air (cm)"
 - scroll
 
 - tapOn: 
     text: "-"
     label: "input field tinggi air"
-    index: 9 ## klik ketinggian air##
+    point: 299, 1005 
 - inputText: "110,5"
 - tapOn: 
     text: "-"
     label: "input field persen DO"
-    index: 6 ## klik persen DO##
+    point: 258, 497
 - inputText: "99,5"
 
 - tapOn: "Simpan" ## klik simpan##
