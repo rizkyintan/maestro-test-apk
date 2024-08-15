@@ -34,6 +34,11 @@ tags:
 - tapOn: "Pilih cuaca"
 - tapOn: "Cerah berawan"
 - tapOn: 
+    point: 426, 740
+    label: "input field Salinitas" ## klik salinitas## 
+- inputText: "15,5"
+- hideKeyboard
+- tapOn: 
     text: "-"
     label: "input field kecerahan"
     index: 4 ## klik kecerahan## ##clear##
@@ -48,10 +53,6 @@ tags:
     label: "input field suhu"
     index: 2 ## klik suhu## ##clear##
 - inputText: "26,5"
-- tapOn: 
-    point: 441, 496
-    label: "input field Salinitas" ## klik salinitas## 
-- inputText: "15,5"
 - tapOn: 
     text: "-"
     label: "input field pH"
