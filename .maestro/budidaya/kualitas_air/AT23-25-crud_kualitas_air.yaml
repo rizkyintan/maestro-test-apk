@@ -36,32 +36,32 @@ tags:
 - tapOn: 
     text: "-"
     label: "input field kecerahan"
-    index: 4 ## klik kecerahan##
+    index: 4 ## klik kecerahan## ##clear##
 - inputText: "72,5"
 - tapOn: 
     text: "-"
-    label: "input field ORP"
+    label: "input field DO" ## mengisi laman DO##
     index: 3 ## klik orp##
-- inputText: "172,5"
+- inputText: "15,5"
 - tapOn: 
     text: "-"
     label: "input field suhu"
-    index: 2 ## klik suhu##
+    index: 2 ## klik suhu## ##clear##
 - inputText: "26,5"
 - tapOn: 
-    point: 441, 723
-    label: "input field Salinitas" ## klik salinitas##
+    point: 441, 496
+    label: "input field Salinitas" ## klik salinitas## 
 - inputText: "15,5"
 - tapOn: 
     text: "-"
     label: "input field pH"
-    index: 0 ## klik pH##
+    index: 0 ## klik pH## ##clear##
 - inputText: "7,5"
 - tapOn: 
     text: "-"
-    label: "input field DO"
-    index: 1 ## klik do#
-- inputText: "15,5"
+    label: "input field orp"
+    index: 1 ## klik do# ##isi field orp##
+- inputText: "172,5"
 
 - hideKeyboard
 - scroll
@@ -78,6 +78,7 @@ tags:
     text: "-"
     label: "input field tinggi air"
     point: 299, 1005 
+- scroll
 - inputText: "110,5"
 - tapOn: 
     text: "-"
