@@ -31,4 +31,4 @@ tags:
     visible: "Belum ada data tersimpan"
     timeout: 10000 ##10 det##
 - assertVisible: 
-    visible: "Belum ada data tersimpan"
+    text: "Belum ada data tersimpan"
