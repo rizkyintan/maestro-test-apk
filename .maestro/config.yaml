@@ -7,8 +7,9 @@ excludeTags:
   - ATAIR
   - ATKEM
   - ATDELETEPAKAN
+  - ATPAKAN
 
 executionOrder:
     continueOnFailure: false
     flowsOrder:
-        - AT26-27
+        - AT31

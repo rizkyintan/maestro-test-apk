@@ -21,8 +21,17 @@ tags:
 - waitForAnimationToEnd:
     timeout: 5000
 ## pick kolam ##
-- tapOn: "A1" ## klik kolam A1##
-- tapOn: "Pakan" ## klik pakan ##
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam   ## klik kolam A1##
+- swipe:
+    direction: LEFT ## klik pakan ##
 - tapOn: 
     point: 555, 343
 - tapOn: "Hapus"
