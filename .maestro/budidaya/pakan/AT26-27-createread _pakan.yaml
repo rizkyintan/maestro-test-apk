@@ -21,8 +21,17 @@ tags:
 - waitForAnimationToEnd:
     timeout: 5000
  ## pick kolam ##
-- tapOn: "A1" ## klik kolam A1##
-- tapOn: "Pakan" ## klik pakan ##
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam  ## klik kolam A1##
+- swipe:
+    direction: LEFT ## menuju pakan ##
 - tapOn:
     point: 311, 1155
 - tapOn: "Tidak"
@@ -34,10 +43,42 @@ tags:
     point: 306, 967 ## klik opsional catatan##
 - inputText: "Test Automation"
 
-- tapOn: "Simpan"
+- tapOn: 
+    text: "Simpan" ## klik simpan##
+    waitToSettleTimeoutMs: 7000
+    delay: 10000
 - extendedWaitUntil:
-    visible: "Jam"
-    timeout: 10000 ##10 det##
+    notVisible: 
+        text: "Simpan" # or any other selector
+    timeout: 10000
+- stopApp
+
+- clearState
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+- tapOn: 
+    text: "Lite"
+    repeat: 3
+    delay: 5000
+- tapOn:
+    point: 235, 681 ## skip pick kolam ##
+    waitToSettleTimeoutMs: 5000
+    delay: 5000
+
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam  ## klik kolam A1##
+- swipe:
+    direction: LEFT
 
 ## klik edit##
 - tapOn: 
@@ -47,16 +88,24 @@ tags:
 - tapOn: "Pakan Bintang 584 (kg)"
 - tapOn: 
     point: 296, 992
+- eraseText
 - inputText: "2,5"
 - hideKeyboard
 - tapOn:
     point: 306, 967
+- eraseText
 - inputText: "Edit jumlah pakan"
 
-- tapOn: "Simpan"
+- tapOn: 
+    text: "Simpan" ## klik simpan##
+    waitToSettleTimeoutMs: 7000
+    delay: 10000
 - extendedWaitUntil:
-    visible: "Jam"
-    timeout: 10000 ##10 det##
+    notVisible: 
+        text: "Simpan" # or any other selector
+    timeout: 10000
+- stopApp
+
 
 
 

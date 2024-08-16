@@ -1,14 +1,14 @@
 #config.yaml
 flows:
-  - budidaya/kualitas_air/*
+  - budidaya/pakan/*
 excludeTags:
   - login
   - ATANCO
   - ATDELPAKAN
-  - ATPAKAN
+  - ATAIR
   - ATKEM
 
 executionOrder:
     continueOnFailure: false
     flowsOrder:
-        - AT23CRUD
+        - AT26-27

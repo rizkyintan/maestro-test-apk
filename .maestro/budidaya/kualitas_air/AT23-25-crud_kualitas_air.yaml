@@ -191,7 +191,7 @@ tags:
     point: 555, 372 
 
 - tapOn: "Hapus"
-- tapOn: "Ya, Saya Yakin" 
+- tapOn: "Ya, Saya Yakin"
 
 
 - extendedWaitUntil:
