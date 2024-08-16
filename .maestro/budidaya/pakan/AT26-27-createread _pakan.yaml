@@ -3,7 +3,7 @@ name: AT26-27
 tags: 
   - ATPAKAN
 ---
-- clearstate
+- clearState
 - launchApp
 
 - runFlow: login_email.yaml
