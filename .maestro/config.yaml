@@ -4,9 +4,9 @@ flows:
 excludeTags:
   - login
   - ATANCO
-  - ATDELPAKAN
   - ATAIR
   - ATKEM
+  - ATDELETEPAKAN
 
 executionOrder:
     continueOnFailure: false
