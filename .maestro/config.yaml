@@ -6,7 +6,6 @@ excludeTags:
   - ATANCO
   - ATAIR
   - ATKEM
-  - ATDELETEPAKAN
   - ATPAKAN
 
 executionOrder:
