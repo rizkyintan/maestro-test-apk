@@ -1,14 +1,14 @@
 #config.yaml
 flows:
-  - budidaya/pakan/*
+  - budidaya/anco/*
 excludeTags:
   - login
-  - ATANCO
   - ATAIR
   - ATKEM
   - ATPAKAN
+  - ATDELPAKAN
 
 executionOrder:
     continueOnFailure: false
     flowsOrder:
-        - AT31
+        - AT28-30
