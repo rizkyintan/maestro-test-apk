@@ -98,7 +98,7 @@ tags:
     index: 0
 - scrollUntilVisible:
     element:
-      text: "Catatan Optional"
+      text: "Anco 4"
 - tapOn:
     text: "Sisa Banyak"
     index: 1
