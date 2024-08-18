@@ -107,10 +107,10 @@ tags:
       text: "Catatan Optional"
 - tapOn:
     text: "Sisa Banyak"
-    index: 2
+    index: 1
 - tapOn:
     text: "Sisa Sedikit"
-    index: 3 
+    index: 2 
 - tapOn: 
     text: "Simpan" ## klik simpan##
     waitToSettleTimeoutMs: 7000
