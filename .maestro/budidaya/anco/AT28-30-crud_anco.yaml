@@ -102,6 +102,9 @@ tags:
 - tapOn:
     text: "Sisa Banyak"
     index: 1
+- scrollUntilVisible:
+    element:
+      text: "Catatan Optional"
 - tapOn:
     text: "Sisa Banyak"
     index: 2
