@@ -75,7 +75,7 @@ tags:
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
     waitToSettleTimeoutMs: 5000
-    delay: 5000
+    delay: 5000 
 
 - tapOn: 
     text: "Kolam"
@@ -108,7 +108,6 @@ tags:
 - tapOn:
     text: "Sisa Sedikit"
     index: 3 
-    
 - tapOn: 
     text: "Simpan" ## klik simpan##
     waitToSettleTimeoutMs: 7000
@@ -151,6 +150,7 @@ tags:
     point: 564, 372 
 - tapOn: "Hapus"
 - tapOn: "Ya, Saya Yakin"
+
 
 - extendedWaitUntil:
     visible: "Belum ada data tersimpan"
