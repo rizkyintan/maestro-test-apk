@@ -107,8 +107,8 @@ tags:
     index: 2
 - tapOn:
     text: "Sisa Sedikit"
-    index: 3
-
+    index: 3 
+    
 - tapOn: 
     text: "Simpan" ## klik simpan##
     waitToSettleTimeoutMs: 7000
