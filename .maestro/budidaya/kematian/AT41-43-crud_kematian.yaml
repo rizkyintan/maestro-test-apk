@@ -21,16 +21,33 @@ tags:
 - waitForAnimationToEnd:
     timeout: 5000
  ## pick kolam ##
-- tapOn: "A1" ## klik kolam A1##
-- tapOn: "Sampling" ## klik sampling ##
-- tapOn: "Panen" ## klik panen ##
-- tapOn: "Kematian" ## klik kematian ##
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam   ## klik kolam A1##
+
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT ## klik kematian ##
 - tapOn:
     point: 311, 1155 ## catatan##
-- scroll
-- scroll
-- scroll
-- scroll
+- scrollUntilVisible:
+    element:
+      text: "Catatan (Opsional)"
 - tapOn: 
     text: "Catatan"
     label: "tap Catatan"
@@ -46,10 +63,56 @@ tags:
     text: "0"
     index: 0
 - inputText: "10"
-- tapOn: "Simpan"
+- tapOn: 
+    text: "Simpan" ## klik simpan##
+    waitToSettleTimeoutMs: 7000
+    delay: 10000
 - extendedWaitUntil:
-    visible: "Kematian"
-    timeout: 10000 ##10 det##
+    notVisible: 
+        text: "Simpan" # or any other selector
+    timeout: 10000 
+- stopApp
+
+- clearState
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+
+- tapOn: 
+    text: "Lite"
+    repeat: 3
+    delay: 5000
+- tapOn:
+    point: 235, 681 ## skip pick kolam ##
+    waitToSettleTimeoutMs: 5000 
+    
+- waitForAnimationToEnd:
+    timeout: 5000
+ ## pick kolam ##
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam   ## klik kolam A1##
+
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT ## klik kematian ##
 
 - tapOn: 
     point: 551, 340 ## edit ##
@@ -66,12 +129,58 @@ tags:
     point: 309, 399
 - eraseText
 - inputText: "2"
-- tapOn: "Simpan"
+- tapOn: 
+    text: "Simpan" ## klik simpan##
+    waitToSettleTimeoutMs: 7000
+    delay: 10000
 - extendedWaitUntil:
-    visible: "Kematian"
-    timeout: 10000 ##10 det##
+    notVisible: 
+        text: "Simpan" # or any other selector
+    timeout: 10000 
+- stopApp
 
-- tapOn: 551, 340
+- clearState
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+
+- tapOn: 
+    text: "Lite"
+    repeat: 3
+    delay: 5000
+- tapOn:
+    point: 235, 681 ## skip pick kolam ##
+    waitToSettleTimeoutMs: 5000 
+
+- waitForAnimationToEnd:
+    timeout: 5000
+ ## pick kolam ##
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam   ## klik kolam A1##
+
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT ## klik kematian ##
+
+- tapOn: 551, 340 ## edit ##
 - tapOn: "Hapus"
 - tapOn: "Ya, Saya Yakin"
 - extendedWaitUntil:
