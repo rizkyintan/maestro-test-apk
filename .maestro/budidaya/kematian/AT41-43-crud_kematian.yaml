@@ -180,7 +180,8 @@ tags:
 - swipe:
     direction: LEFT ## klik kematian ##
 
-- tapOn: 551, 340 ## edit ##
+- tapOn: 
+    point: 551, 340 ## edit ##
 - tapOn: "Hapus"
 - tapOn: "Ya, Saya Yakin"
 - extendedWaitUntil:
