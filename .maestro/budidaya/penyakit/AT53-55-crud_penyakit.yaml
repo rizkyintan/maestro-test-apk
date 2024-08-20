@@ -51,6 +51,11 @@ tags:
     direction: LEFT
 - swipe:
     direction: LEFT ## PENYAKIT ##
+- tapOn:
+    text: "random"
+    optional: true
+    repeat: 2
+    delay: 2000 ## DELAY##
 - tapOn: 
     point: 311, 1155 ##catatan##
 - tapOn: "Pilih nama penyakit"
@@ -115,6 +120,12 @@ tags:
     direction: LEFT
 - swipe:
     direction: LEFT ## PENYAKIT ##
+- tapOn:
+    text: "random"
+    optional: true
+    repeat: 2
+    delay: 2000 ## DELAY##
+
 - tapOn: 
     point: 573, 316 ##edit##
 - tapOn: "Early Mortality Syndrome"
@@ -180,6 +191,11 @@ tags:
     direction: LEFT
 - swipe:
     direction: LEFT ## PENYAKIT ##
+- tapOn:
+    text: "random"
+    optional: true
+    repeat: 2
+    delay: 2000 ## DELAY##
 - tapOn: 
     point: 573, 316 ##edit##
 - tapOn: "Hapus"
