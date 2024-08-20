@@ -60,7 +60,7 @@ tags:
     point: 311, 1155 ##catatan##
 - tapOn: "Pilih nama penyakit"
 - tapOn: "cari"
-- inputText: "Early Mortality Syndrome"
+- inputText: "Early Mortality"
 - tapOn: "Early Mortality Syndrome"
 - tapOn: "Catatan"
 - inputText: "Menambahkan penyakit EMS"
