@@ -1,14 +1,15 @@
 #config.yaml
 flows:
-  - budidaya/kematian/*
+  - budidaya/penyakit/*
 excludeTags:
   - login
   - ATAIR
   - ATPAKAN
   - ATDELPAKAN
   - ATANCO
+  - ATKEM
 
 executionOrder:
     continueOnFailure: false
     flowsOrder:
-        - AT41-43
+        - AT53-55

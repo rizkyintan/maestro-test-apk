@@ -1,0 +1,191 @@
+appId: tech.jala.android.lite
+name: AT53-55
+tags: 
+  - ATPENYAKIT
+---
+- clearState
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+
+- tapOn: 
+    text: "Lite"
+    repeat: 3
+    delay: 5000
+- tapOn:
+    point: 235, 681 ## skip pick kolam ##
+    waitToSettleTimeoutMs: 5000 
+    
+- waitForAnimationToEnd:
+    timeout: 5000
+ ## pick kolam ##
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam ## pick kolam A1 ##
+
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+  - swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT ## PENYAKIT ##
+- tapOn: 
+    point: 311, 1155 ##catatan##
+- tapOn: "Pilih nama penyakit"
+- tapOn: "EMS"
+- tapOn: "Catatan"
+- inputText: "Menambahkan penyakit EMS"
+- tapOn: 
+    text: "Simpan" ## klik simpan##
+    waitToSettleTimeoutMs: 7000
+    delay: 10000
+- extendedWaitUntil:
+    notVisible: 
+        text: "Simpan" # or any other selector
+    timeout: 10000 
+- stopApp
+
+- clearState
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+
+- tapOn: 
+    text: "Lite"
+    repeat: 3
+    delay: 5000
+- tapOn:
+    point: 235, 681 ## skip pick kolam ##
+    waitToSettleTimeoutMs: 5000 
+    
+- waitForAnimationToEnd:
+    timeout: 5000
+ ## pick kolam ##
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam ## pick kolam A1 ##
+
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+  - swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT ## PENYAKIT ##
+- tapOn: 
+    point: 573, 316 ##edit##
+- tapOn: "Early Mortality Syndrome"
+- tapOn: "Black Spot Disease"
+- tapOn: "Menambahkan penyakit EMS"
+- eraseText
+- inputText: "Ubah penyakit menjadi Black Spot Disease"
+- tapOn: 
+    text: "Simpan" ## klik simpan##
+    waitToSettleTimeoutMs: 7000
+    delay: 10000
+- extendedWaitUntil:
+    notVisible: 
+        text: "Simpan" # or any other selector
+    timeout: 10000 
+- stopApp
+
+- clearState
+- launchApp
+
+- runFlow: login_email.yaml
+
+## Langsung skip ke step setelah login selesai 
+
+- tapOn: 
+    text: "Lite"
+    repeat: 3
+    delay: 5000
+- tapOn:
+    point: 235, 681 ## skip pick kolam ##
+    waitToSettleTimeoutMs: 5000 
+    
+- waitForAnimationToEnd:
+    timeout: 5000
+ ## pick kolam ##
+- tapOn: 
+    text: "Kolam"
+    repeat: 3
+    delay: 5000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    point: 62, 376
+    label: klik kolam ## pick kolam A1 ##
+
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT
+  - swipe:
+    direction: LEFT
+- swipe:
+    direction: LEFT ## PENYAKIT ##
+- tapOn: 
+    point: 573, 316 ##edit##
+- tapOn: "Hapus"
+- tapOn: "Ya, Saya Yakin"
+- extendedWaitUntil:
+    visible: "Belum ada data tersimpan"
+    timeout: 10000 ##10 det##
+- assertVisible: 
+    text: "Belum ada data tersimpan"
