@@ -47,7 +47,7 @@ tags:
     direction: LEFT
 - swipe:
     direction: LEFT
-  - swipe:
+- swipe:
     direction: LEFT
 - swipe:
     direction: LEFT ## PENYAKIT ##
