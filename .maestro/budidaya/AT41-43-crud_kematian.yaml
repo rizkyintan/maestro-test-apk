@@ -1,7 +1,7 @@
 appId: tech.jala.android.lite
 name: AT41-43
 tags: 
-  - ATKEM
+  - AT41-43
 ---
 - clearState
 - launchApp

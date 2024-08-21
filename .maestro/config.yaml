@@ -2,19 +2,19 @@
 flows:
   - "**"
 includeTags:
-  - ATAIR
-  - ATPAKAN
-  - ATDELPAKAN
-  - ATANCO
-  - ATKEM
-  - ATPENYAKIT
+  - AT23-25
+  - AT26-27
+  - AT28-30
+  - AT31
+  - AT41-43
+  - AT53-55
 excludeTags:
   - login
 
 executionOrder:
     continueOnFailure: false
     flowsOrder:
-        - AT23CRUD
+        - AT23-25
         - AT26-27
         - AT28-30
         - AT31
