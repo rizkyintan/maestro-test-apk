@@ -59,9 +59,8 @@ tags:
 - tapOn: 
     point: 311, 1155 ##catatan##
 - tapOn: "Pilih nama penyakit"
-- tapOn: "cari"
-- inputText: "Early Mortality"
-- tapOn: "Early Mortality Syndrome"
+- tapOn:
+    point: 63, 833 ## pointer tap ems ##
 - tapOn: "Catatan"
 - inputText: "Menambahkan penyakit EMS"
 - tapOn: 
@@ -131,7 +130,8 @@ tags:
 - tapOn: 
     point: 573, 316 ##edit##
 - tapOn: "Early Mortality Syndrome"
-- tapOn: "Black Spot Disease"
+- tapOn:
+    point: 73, 638
 - tapOn: "Menambahkan penyakit EMS"
 - eraseText
 - inputText: "Ubah penyakit menjadi Black Spot Disease"
