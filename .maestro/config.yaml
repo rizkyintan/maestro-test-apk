@@ -1,6 +1,6 @@
 #config.yaml
 flows:
-  - budidaya/penyakit/*
+  - "**"
 includeTags:
   - ATAIR
   - ATPAKAN
