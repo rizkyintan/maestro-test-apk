@@ -205,8 +205,10 @@ tags:
     point: 573, 316 ##edit##
 - tapOn: "Hapus"
 - tapOn: "Ya, Saya Yakin"
+
 - extendedWaitUntil:
     visible: "Belum ada data tersimpan"
     timeout: 10000 ##10 det##
+    
 - assertVisible: 
     text: "Belum ada data tersimpan" 
