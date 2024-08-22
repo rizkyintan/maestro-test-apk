@@ -84,7 +84,7 @@ tags:
 ## klik edit##
 - tapOn: 
     point: 555, 343
-    
+
 - assertVisible: "5,5"
 
 - tapOn: "Pilih Stok"
