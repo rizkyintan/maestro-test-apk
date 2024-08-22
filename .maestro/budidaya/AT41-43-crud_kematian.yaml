@@ -116,6 +116,11 @@ tags:
 
 - tapOn: 
     point: 551, 340 ## edit ##
+
+## assert data ##
+- assertVisible: "10"
+- assertVisible: "1000"
+## fitur pengali masih error##
 - tapOn: "Size"
 - tapOn: 
     point: 293, 1030

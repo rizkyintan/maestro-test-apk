@@ -123,11 +123,18 @@ tags:
     point: 62, 376
     label: klik kolam  ## klik kolam A1##
 
+
 ## klik edit ##
 - tapOn: 
     point: 555, 372 
-## Assert data
-- assertVisible: "pH"
+
+## assert data ##
+- assertVisible: "7,5"
+- assertVisible: "15,5"
+- assertVisible: "26,5"
+- assertVisible: "4,45"
+- assertVisible: "72,5"
+- assertVisible: "172,5"
 
 - tapOn: 
     text: "26.5"

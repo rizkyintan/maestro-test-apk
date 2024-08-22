@@ -129,6 +129,9 @@ tags:
 
 - tapOn: 
     point: 573, 316 ##edit##
+## assert data ##
+- assertVisible: "Early Mortality Syndrome"
+
 - tapOn: "Early Mortality Syndrome"
 - tapOn:
     point: 73, 638
