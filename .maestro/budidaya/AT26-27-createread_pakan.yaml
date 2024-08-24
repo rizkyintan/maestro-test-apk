@@ -17,6 +17,7 @@ tags:
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
     waitToSettleTimeoutMs: 5000 
+    label: "klik kolam" 
     
 - waitForAnimationToEnd:
     timeout: 5000
@@ -29,18 +30,21 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam  ## klik kolam A1##
+    label: "klik kolam A1"  ## klik kolam A1##
 - swipe:
     direction: LEFT ## menuju pakan ##
 - tapOn:
     point: 311, 1155
+    label: "klik kolam CATATAN"
 - tapOn: "Tidak"
 - tapOn:
     point: 296, 992 ## klik jumlah pakan#
+    label: "klik JUMLAH PAKAN" 
 - inputText: "5,5"
 - hideKeyboard
 - tapOn: 
     point: 306, 967 ## klik opsional catatan##
+    label: "klik CATATAN" 
 - inputText: "Test Automation"
 
 - tapOn: 
@@ -65,6 +69,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "klik KOLAM" 
     waitToSettleTimeoutMs: 5000
     delay: 5000
 
@@ -76,7 +81,7 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam  ## klik kolam A1##
+    label: "klik kolam A1"  ## klik kolam A1##
 - swipe:
     direction: LEFT
 
@@ -84,6 +89,7 @@ tags:
 ## klik edit##
 - tapOn: 
     point: 555, 343
+    label: "klik EDIT" 
 
 - assertVisible: "5,5"
 
@@ -91,11 +97,13 @@ tags:
 - tapOn: "Pakan Bintang 584 (kg)"
 - tapOn: 
     point: 296, 992
+    label: "klik jumlah pakan" 
 - eraseText
 - inputText: "2,5"
 - hideKeyboard
 - tapOn:
     point: 306, 967
+    label: "klik catatan" 
 - eraseText
 - inputText: "Edit jumlah pakan"
 

@@ -16,6 +16,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "TAP KOLAM" 
     waitToSettleTimeoutMs: 5000 
     
 - waitForAnimationToEnd:
@@ -29,11 +30,12 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam   ## klik kolam A1##
+    label: "klik kolam A1" ## klik kolam A1##
 - swipe:
     direction: LEFT ## klik pakan ##
 - tapOn: 
     point: 555, 343
+    label: "klik EDIT" 
 - tapOn: "Hapus"
 - tapOn: "Ya, Saya Yakin"
 - extendedWaitUntil:

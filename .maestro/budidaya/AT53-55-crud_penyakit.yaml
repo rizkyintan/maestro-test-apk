@@ -16,7 +16,8 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
-    waitToSettleTimeoutMs: 5000 
+    label: "klik kolam" 
+    waitToSettleTimeoutMs: 5000
     
 - waitForAnimationToEnd:
     timeout: 5000
@@ -29,7 +30,7 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam ## pick kolam A1 ##
+    label: "klik kolam A1"  ## pick kolam A1 ##
 
 - swipe:
     direction: LEFT
@@ -58,9 +59,11 @@ tags:
     delay: 2000 ## DELAY##
 - tapOn: 
     point: 311, 1155 ##catatan##
+    label: "klik +catatan" 
 - tapOn: "Pilih nama penyakit"
 - tapOn:
     point: 63, 833 ## pointer tap ems ##
+    label: "klik EMS" 
 - tapOn: "Catatan"
 - inputText: "Menambahkan penyakit EMS"
 - tapOn: 
@@ -86,6 +89,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "klik kolam" 
     waitToSettleTimeoutMs: 5000 
     
 - waitForAnimationToEnd:
@@ -99,7 +103,7 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam ## pick kolam A1 ##
+    label: "klik kolam A1"  ## pick kolam A1 ##
 
 - swipe:
     direction: LEFT
@@ -129,6 +133,7 @@ tags:
 
 - tapOn: 
     point: 573, 316 ##edit##
+    label: "klik edit" 
 ## assert data ##
 - assertVisible: "Early Mortality Syndrome"
 
@@ -162,6 +167,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "klik kolam" 
     waitToSettleTimeoutMs: 5000 
     
 - waitForAnimationToEnd:
@@ -175,7 +181,7 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam ## pick kolam A1 ##
+    label: "klik kolam A1"  ## pick kolam A1 ##
 
 - swipe:
     direction: LEFT
@@ -204,6 +210,7 @@ tags:
     delay: 2000 ## DELAY##
 - tapOn: 
     point: 573, 316 ##edit##
+    label: "klik edit" 
 - tapOn: "Hapus"
 - tapOn: "Ya, Saya Yakin"
 

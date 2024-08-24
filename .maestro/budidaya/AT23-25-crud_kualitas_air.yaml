@@ -15,6 +15,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "tap kolam"
     waitToSettleTimeoutMs: 5000
     delay: 5000
 
@@ -29,6 +30,7 @@ tags:
     label: klik kolam  ## klik kolam A1##
 - tapOn:
     point: 311, 1155
+    label: "tap Catatan"
 - tapOn: "Pilih warna air"
 - tapOn: "Coklat"
 - tapOn: "Pilih cuaca"
@@ -70,6 +72,7 @@ tags:
 - tapOn: 
     text: "Parameter lainnya"
     point: 138, 1015
+    label: "tap parameter lainnya"
 
 - scrollUntilVisible:
     element:
@@ -110,6 +113,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "tap kolam"
     waitToSettleTimeoutMs: 5000
     delay: 5000
 
@@ -121,12 +125,13 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam  ## klik kolam A1##
+    label: "klik kolam A1"  ## klik kolam A1##
 
 
 ## klik edit ##
 - tapOn: 
-    point: 555, 372 
+    point: 555, 372
+    label: "tap edit" 
 
 ## assert data ##
 - assertVisible: "7.5"
@@ -181,6 +186,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "klik kolam" 
     waitToSettleTimeoutMs: 5000
     delay: 5000
 
@@ -192,11 +198,12 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam  ## klik kolam A1##
+    label: "klik kolam A1"  ## klik kolam A1##
 
 ## klik edit ##
 - tapOn: 
     point: 555, 372 
+    label: "klik EDIT" 
 
 - tapOn: "Hapus"
 - tapOn: "Ya, Saya Yakin"

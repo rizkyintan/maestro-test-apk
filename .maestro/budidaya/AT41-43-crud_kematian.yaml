@@ -16,6 +16,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "klik kolam" 
     waitToSettleTimeoutMs: 5000 
     
 - waitForAnimationToEnd:
@@ -29,7 +30,7 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam   ## klik kolam A1##
+    label: "klik kolam A1" ## klik kolam A1##
 
 - swipe:
     direction: LEFT
@@ -45,6 +46,7 @@ tags:
     direction: LEFT ## klik kematian ##
 - tapOn:
     point: 311, 1155 ## catatan##
+    label: "klik +Catatan" 
 - scrollUntilVisible:
     element:
       text: "Catatan (Opsional)"
@@ -86,6 +88,7 @@ tags:
     delay: 5000
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
+    label: "klik kolam" 
     waitToSettleTimeoutMs: 5000 
     
 - waitForAnimationToEnd:
@@ -99,7 +102,7 @@ tags:
     timeout: 5000
 - tapOn:
     point: 62, 376
-    label: klik kolam   ## klik kolam A1##
+    label: "klik kolam A1"  ## klik kolam A1##
 
 - swipe:
     direction: LEFT
@@ -116,6 +119,7 @@ tags:
 
 - tapOn: 
     point: 551, 340 ## edit ##
+    label: "klik edit" 
 
 ## assert data ##
 - assertVisible: "10.00"
@@ -124,14 +128,17 @@ tags:
 - tapOn: "Size"
 - tapOn: 
     point: 293, 1030
+    label: "klik Total Berat" 
 - eraseText
 - inputText: "3"
 - tapOn: 
     point: 311, 518
+    label: "klik Jumlah Ekor" 
 - eraseText
 - inputText: "95"
 - tapOn: 
     point: 309, 399
+    label: "klik pengali" 
 - eraseText
 - inputText: "2"
 - tapOn: 
@@ -158,6 +165,7 @@ tags:
 - tapOn:
     point: 235, 681 ## skip pick kolam ##
     waitToSettleTimeoutMs: 5000 
+    label: "klik kolam" 
 
 - waitForAnimationToEnd:
     timeout: 5000
@@ -171,6 +179,7 @@ tags:
 - tapOn:
     point: 62, 376
     label: klik kolam   ## klik kolam A1##
+    label: "klik kolam A1" 
 
 - swipe:
     direction: LEFT
@@ -187,6 +196,7 @@ tags:
 
 - tapOn: 
     point: 551, 340 ## edit ##
+    label: "klik edit" 
 - tapOn: "Hapus"
 - tapOn: "Ya, Saya Yakin"
 - extendedWaitUntil:
