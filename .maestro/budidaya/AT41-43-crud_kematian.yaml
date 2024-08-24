@@ -120,7 +120,7 @@ tags:
 ## assert data ##
 - assertVisible: "10.00"
 - assertVisible: "1000.00"
-## fitur pengali masih error##
+- assertVisible: "2" ## fitur pengali masih error##
 - tapOn: "Size"
 - tapOn: 
     point: 293, 1030

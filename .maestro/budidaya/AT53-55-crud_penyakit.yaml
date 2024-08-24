@@ -135,6 +135,7 @@ tags:
 - tapOn: "Early Mortality Syndrome"
 - tapOn:
     point: 73, 638
+    label: "memilih Black Spot Disease"
 - tapOn: "Menambahkan penyakit EMS"
 - eraseText
 - inputText: "Ubah penyakit menjadi Black Spot Disease"

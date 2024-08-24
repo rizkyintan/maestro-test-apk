@@ -81,7 +81,7 @@ tags:
     label: "input field tinggi air"
     index: 3 
 - scroll
-- inputText: "110,5"
+- inputText: "110,5" ## input ini masih error karena bsgian field ini tertutup oleh Keyboard ##
 - tapOn: 
     text: "-"
     label: "input field persen DO"
@@ -135,6 +135,7 @@ tags:
 - assertVisible: "4.45"
 - assertVisible: "72.5"
 - assertVisible: "172.5"
+
 
 - tapOn: 
     text: "26.5"
