@@ -21,13 +21,11 @@ tags:
     
 - waitForAnimationToEnd:
     timeout: 5000
- ## pick kolam ##
-- tapOn: 
-    text: "Kolam"
+- tapOn:
+    text: "random"
+    optional: true
     repeat: 3
-    delay: 5000
-- waitForAnimationToEnd:
-    timeout: 5000
+    delay: 2000 ## DELAY##
 - tapOn:
     point: 62, 376
     label: "klik kolam A1"  ## pick kolam A1 ##
@@ -94,13 +92,11 @@ tags:
     
 - waitForAnimationToEnd:
     timeout: 5000
- ## pick kolam ##
-- tapOn: 
-    text: "Kolam"
+- tapOn:
+    text: "random"
+    optional: true
     repeat: 3
-    delay: 5000
-- waitForAnimationToEnd:
-    timeout: 5000
+    delay: 2000 ## DELAY##
 - tapOn:
     point: 62, 376
     label: "klik kolam A1"  ## pick kolam A1 ##
@@ -172,13 +168,11 @@ tags:
     
 - waitForAnimationToEnd:
     timeout: 5000
- ## pick kolam ##
-- tapOn: 
-    text: "Kolam"
+- tapOn:
+    text: "random"
+    optional: true
     repeat: 3
-    delay: 5000
-- waitForAnimationToEnd:
-    timeout: 5000
+    delay: 2000 ## DELAY##
 - tapOn:
     point: 62, 376
     label: "klik kolam A1"  ## pick kolam A1 ##
