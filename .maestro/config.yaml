@@ -3,20 +3,18 @@ flows:
   - "**"
 includeTags:
   - AT23-25
+  - AT53-54
+  - AT55
+excludeTags:
+  - login
   - AT26-27
   - AT28-30
   - AT31
   - AT41-43
-  - AT53-55
-excludeTags:
-  - login
 
 executionOrder:
     continueOnFailure: false
     flowsOrder:
         - AT23-25
-        - AT26-27
-        - AT28-30
-        - AT31
-        - AT41-43
-        - AT53-55
+        - AT53-54
+        - AT55
