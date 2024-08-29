@@ -1,5 +1,5 @@
 appId: tech.jala.android.lite
-name: template_login_budidaya
+name: template_login_kolamtambaksiklus
 tags:
   - login
 ---
@@ -46,7 +46,6 @@ tags:
 - waitForAnimationToEnd:
     timeout: 5000
 
-# Assert Data~
 # Assert Data untuk masuk ke Page Beranda
 - assertVisible: 
     text: "Lite" ##Pastikan di Widget Inspector apakah bisa di pick~
@@ -74,3 +73,4 @@ tags:
     label: "Satu paket assert data verifikasi telah masuk ke page Beranda"
 - assertVisible:
     text: "Prediksi"
+    label: "Satu paket assert data verifikasi telah masuk ke page Beranda"

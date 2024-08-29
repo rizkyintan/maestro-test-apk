@@ -1,7 +1,7 @@
 appId: tech.jala.android.lite
-name: template_login_budidaya
+name: AT10
 tags:
-  - login
+  - AT10
 ---
 - clearState
 - launchApp
@@ -19,11 +19,11 @@ tags:
 
 - tapOn: 
     text: "No. Handphone atau Email"
-    label: "Masukkan alamat email jala.automation@gmail.com"
+    label: "Masukkan alamat email automation_1@gmail.com"
     index: 1
 - inputText: 
-    text: "jala.automation@gmail.com"
-    label: "Ketik email jala.automation@gmail.com"
+    text: "automation_1@gmail.com"
+    label: "Ketik email automation_1@gmail.com"
     
 
 
@@ -36,7 +36,9 @@ tags:
     text: "jalaistimewa"
     label: "Ketik password"
 
-- hideKeyboard
+- tapOn:
+    text: "Masuk"
+    label: "Menyembunyikan keyboard terlebih dahulu"
 
 - tapOn: 
     text: "Masuk"
@@ -46,7 +48,6 @@ tags:
 - waitForAnimationToEnd:
     timeout: 5000
 
-# Assert Data~
 # Assert Data untuk masuk ke Page Beranda
 - assertVisible: 
     text: "Lite" ##Pastikan di Widget Inspector apakah bisa di pick~
@@ -74,3 +75,36 @@ tags:
     label: "Satu paket assert data verifikasi telah masuk ke page Beranda"
 - assertVisible:
     text: "Prediksi"
+    label: "Satu paket assert data verifikasi telah masuk ke page Beranda"
+
+
+## Lanjut Step
+
+- tapOn:
+    point: 545, 1155
+    label: "Tap pada Akun"
+
+- tapOn:
+    text: "Pengaturan"
+    label: "Tap Pengaturan"
+
+- tapOn:
+    text: "Hapus Akun"
+
+- tapOn:
+    text: "Ya, Saya Yakin"
+
+- tapOn: "Kata sandi saat ini"
+- inputText: "jalaistimewa"
+
+- hideKeyboard
+- tapOn: 
+    point: 42, 713
+
+- tapOn: "Hapus"
+- stopApp
+    
+
+
+
+

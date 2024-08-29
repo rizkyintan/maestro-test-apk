@@ -1,7 +1,7 @@
 appId: tech.jala.android.lite
-name: template_login_budidaya
+name: AT2
 tags:
-  - login
+  - AT2
 ---
 - clearState
 - launchApp
@@ -36,7 +36,9 @@ tags:
     text: "jalaistimewa"
     label: "Ketik password"
 
-- hideKeyboard
+- tapOn:
+    text: "Masuk"
+    label: "Menyembunyikan keyboard terlebih dahulu"
 
 - tapOn: 
     text: "Masuk"
@@ -46,7 +48,6 @@ tags:
 - waitForAnimationToEnd:
     timeout: 5000
 
-# Assert Data~
 # Assert Data untuk masuk ke Page Beranda
 - assertVisible: 
     text: "Lite" ##Pastikan di Widget Inspector apakah bisa di pick~
@@ -74,3 +75,6 @@ tags:
     label: "Satu paket assert data verifikasi telah masuk ke page Beranda"
 - assertVisible:
     text: "Prediksi"
+    label: "Satu paket assert data verifikasi telah masuk ke page Beranda"
+
+- stopApp
