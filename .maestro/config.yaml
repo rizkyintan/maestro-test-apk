@@ -15,7 +15,6 @@ excludeTags:
 executionOrder:
     continueOnFailure: false
     flowsOrder:
-        - AT23-25
         - AT53-54
         - AT55
 
