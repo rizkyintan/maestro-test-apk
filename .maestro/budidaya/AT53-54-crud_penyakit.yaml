@@ -1,7 +1,8 @@
+
 appId: tech.jala.android.lite
-name: AT53-55
+name: AT53-54
 tags: 
-  - AT53-55
+  - AT53-54
 ---
 - clearState
 - launchApp
@@ -11,7 +12,8 @@ tags:
 ## Langsung skip ke step setelah login selesai 
 
 - tapOn: 
-    text: "Lite"
+    text: "Delay (Ignore This)"
+    optional: true
     repeat: 3
     delay: 5000
 - tapOn:
@@ -79,12 +81,13 @@ tags:
 - clearState
 - launchApp
 
-- runFlow: login_email.yaml
+- runFlow: login_email_budidaya.yaml
 
 ## Langsung skip ke step setelah login selesai 
 
 - tapOn: 
-    text: "Lite"
+    text: "Delay (Ignore This)"
+    optional: true
     repeat: 3
     delay: 5000
 - tapOn:
@@ -153,70 +156,3 @@ tags:
         text: "Simpan" # or any other selector
     timeout: 10000 
 - stopApp
-
-- clearState
-- launchApp
-
-- runFlow: login_email.yaml
-
-## Langsung skip ke step setelah login selesai 
-
-- tapOn: 
-    text: "Lite"
-    repeat: 3
-    delay: 5000
-- tapOn:
-    point: 235, 681 ## skip pick kolam ##
-    label: "klik kolam" 
-    waitToSettleTimeoutMs: 5000 
-    
-- waitForAnimationToEnd:
-    timeout: 5000
- ## pick kolam ##
-- tapOn: 
-    text: "Kolam"
-    repeat: 3
-    delay: 5000
-- waitForAnimationToEnd:
-    timeout: 5000
-- tapOn:
-    point: 62, 376
-    label: "klik kolam A1"  ## pick kolam A1 ##
-
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT
-- swipe:
-    direction: LEFT ## PENYAKIT ##
-- tapOn:
-    text: "random"
-    optional: true
-    repeat: 2
-    delay: 2000 ## DELAY##
-- tapOn: 
-    point: 573, 316 ##edit##
-    label: "klik edit" 
-- tapOn: "Hapus"
-- tapOn: "Ya, Saya Yakin"
-
-- extendedWaitUntil:
-    visible: "Belum ada data tersimpan"
-    timeout: 10000 ##10 det##
-    
-- assertVisible: 
-    text: "Belum ada data tersimpan" 
