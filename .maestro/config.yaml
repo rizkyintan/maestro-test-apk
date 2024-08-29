@@ -43,15 +43,18 @@ executionOrder:
         - AT11
         - AT12
         - AT13
-        - AT14
         - AT15
         - AT16
         - AT17
-        - AT18
         - AT19
         - AT20
         - AT21
         - AT22
+        - AT18
+        - AT14
+        - AT26-27
+        - AT28-30
+        - AT31
         - AT53-54
         - AT55
 
