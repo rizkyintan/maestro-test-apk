@@ -74,4 +74,3 @@ tags:
     label: "Satu paket assert data verifikasi telah masuk ke page Beranda"
 - assertVisible:
     text: "Prediksi"
-    label: "Satu paket assert data verifikasi telah masuk ke page Beranda"

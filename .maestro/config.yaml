@@ -2,19 +2,6 @@
 flows:
   - "**"
 includeTags:
-  - AT23-25
-  - AT26-27
-  - AT28-30
-  - AT31
-  - AT32-34
-  - AT35-37
-  - AT38-40
-  - AT41-43
-  - AT44-46
-  - AT47-49
-  - AT50-52
-  - AT53-55
-excludeTags:
   - AT2
   - AT3
   - AT5
@@ -34,22 +21,39 @@ excludeTags:
   - AT20
   - AT21
   - AT22
+   - AT23-25
+  - AT26-27
+  - AT28-30
+  - AT31
+  - AT32-34
+  - AT35-37
+  - AT38-40
+  - AT41-43
+  - AT44-46
+  - AT47-49
+  - AT50-52
+  - AT53-54
+  - AT55
+excludeTags:
+  - login
 
 executionOrder:
-    continueOnFailure: false # default is true
+    continueOnFailure: false
     flowsOrder:
+        - AT11
+        - AT12
+        - AT13
+        - AT15
+        - AT16
+        - AT17
+        - AT19
+        - AT20
+        - AT21
+        - AT22
+        - AT18
+        - AT14
         - AT26-27
         - AT28-30
         - AT31
-      
-
-
-
-  #File config.yaml ini diperlukan untuk menentukan:
-  #1. test apa saja yang ingin diikut sertakan
-  #2. untuk kasus tes crud yang kemungkinan ada beberapa test yang memiliki keterkaitan saling bergantung pada test lain,
-  #   dalam file config.yaml ini dapat menentukan executionOrder untuk menentukan urutan test yang ingin diurutkan
-  #3. Untuk lengkapnya mengenai cara konfigurasi ada di docs maestro ui testing
-  #4. File config ini dinamis, sesuai keperluan testing, semisal mau di set di test semua atau hanya beberapa bisa diatur disini.
-
-  ###
+        - AT53-54
+        - AT55
