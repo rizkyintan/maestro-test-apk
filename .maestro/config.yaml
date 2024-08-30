@@ -9,6 +9,8 @@ includeTags:
   - AT7
   - AT9
   - AT10
+excludeTags:
+  - login
   - AT11
   - AT12
   - AT13
@@ -34,8 +36,6 @@ includeTags:
   - AT50-52
   - AT53-54
   - AT55
-excludeTags:
-  - login
 
 executionOrder:
     continueOnFailure: false
