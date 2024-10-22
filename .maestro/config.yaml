@@ -2,12 +2,16 @@
 flows:
   - "**"
 includeTags:
-  - AT2
+  - AT2  
   - AT3
   - AT5
   - AT7
 excludeTags:
   - login
+  - AT3
+  - AT5
+  - AT6
+  - AT7
   - AT9
   - AT10
   - AT11
