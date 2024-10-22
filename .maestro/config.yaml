@@ -4,10 +4,10 @@ flows:
 includeTags:
   - AT2
   - AT3
-excludeTags:
-  - login
   - AT5
   - AT7
+excludeTags:
+  - login
   - AT9
   - AT10
   - AT11
@@ -41,3 +41,5 @@ executionOrder:
     flowsOrder:
         - AT2
         - AT3
+        - AT5
+        - AT7
